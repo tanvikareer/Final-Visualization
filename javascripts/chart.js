@@ -12,7 +12,7 @@ $(function () {
         yAxis: {
             min: 0,
             title: {
-                text: 'Total yearly expenditure'
+                text: 'Total yearly expenditure (in Rupees)'
             },
             stackLabels: {
                 enabled: true,
