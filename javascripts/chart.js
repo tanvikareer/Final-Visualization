@@ -4,7 +4,7 @@ $(function () {
             type: 'column'
         },
         title: {
-            text: 'Stacked column chart'
+            text: 'Expenses per year by families'
         },
         xAxis: {
             categories: ['Vijaya', 'Tara', 'Sulekha', 'Kanti', 'Varsha']
