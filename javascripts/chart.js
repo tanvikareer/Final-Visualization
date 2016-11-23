@@ -1,9 +1,10 @@
 $(function () {
     Highcharts.chart('container', {
         chart: {
-            type: 'column',
-            color: ['#fff000', '#7FCB99', '#73DOB37', '#666666']
+            type: 'column'
+            
         },
+        color: ['#fff000', '#7FCB99', '#73DOB37', '#666666'],
         title: {
             text: 'Expenses per year by families'
         },
