@@ -76,7 +76,7 @@ $(function () {
     });
 });
 
-$(function () {
+//$(function () {
     Highcharts.chart('container1', {
         chart: {
             type: 'column'
