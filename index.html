@@ -87,9 +87,15 @@
 <br/>-->
   
 <div id="container4" style="min-width: 310px; height: 800px; margin: 0 auto"></div>
+<br/>
+<br/>
 
 <p> One of the big expenses of the land owning families is paying off loans, which is completely absent in the land less families. </p> 
-  
+<br/>
+<br/>  
+<div id="container5" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div> 
+<br/>
+<br/>  
 <p> Out of the 461 families in the village, only 6.5% are a part of a Self Helf Savings Group. </p>
 <br/>
 <p> This clearly shows that the landless families are not availing of any of the formal saving methods available in the village. Thus, these women who have very limited and unpredictable incomes, also do not have adequate tools to save and invest their income. My thesis will explore what could be some new ways to make this process accessible, tangible, flexible, personalised and fun for these women. </p>
@@ -187,5 +193,53 @@
     });
 });
       </script>
+      <script>
+        $(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+        Highcharts.chart('container5', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            colors: ['#C8E2A7', '#1B5036']
+            },
+            title: {
+                text: 'Families using Self Help Groups'
+            },
+            tooltip: {
+                pointFormat: ' <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Families',
+                colorByPoint: true,
+                data: [{
+                
+                    name: 'Part of a SHG',
+                    y: 6.5
+                }, {
+                    name: 'Not a part of a SHG',
+                    y: 93.5
+
+                }]
+            }]
+        });
+    });
+});
+        </script>
   </body>
 </html>
