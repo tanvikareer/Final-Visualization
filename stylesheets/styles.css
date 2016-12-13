@@ -58,12 +58,12 @@ body {
   background-color: #353233;
   padding:50px;
   font: 14px/1.5 "Noto Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color:#fff;
+  color:#7FCB99;
   font-weight:400;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color:#fff;
+  color:#7FCB99;
   margin:0 0 20px;
 }
 
@@ -80,11 +80,11 @@ h1 {
 }
 
 h2 {
-  color:#fff;
+  color:#7FCB99;
 }
 
 h3, h4, h5, h6 {
-  color:#fff;
+  color:#7FCB99;
 }
 
 a {
