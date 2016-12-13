@@ -15,10 +15,21 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
     <script src="https://code.highcharts.com/highcharts.js"></script>
     <script src="https://code.highcharts.com/modules/exporting.js"></script>
-  <style>
-    img{width: 500px}
+    <style>
+    html, body {
+      height: 100%;
+      padding: 0;
+      margin:0;
+      }
+      #container2 {
+        position: relative;
+        overflow: hidden;
+        min-width: 500px;
+        max-width: 860;
+        height: 500px;
+      }
+      img{ width: 860px}
     </style>
-  
   </head>
   <body>
     <!-- 2. Add the JavaScript to initialize the chart on document ready -->
@@ -41,8 +52,9 @@
       <section>
         <h3>
 <a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>This is the home of the Banjara community</h3>
-        
+<div id="container2">        
         <img src="IMG_0549.JPG" alt="Introducing Akola" style=width:500px; />
+        </div>
         
 <p> Akola is the home of the Banjaras, an agricultural community. Traditionally a nomadic community, they are now small holder farmers or landless laborers. The main issue they are facing is instability of their income because agriculture is so closely tied to the rain. In this situation, they are stuck in a tight cycle of earning and spending, and it is vey dificult for them to save or invest for the future they want. My thesis is focussed on finding what these ways could be.</p>
 
