@@ -3,7 +3,7 @@ $(function () {
         chart: {
             type: 'column'
         },
-        colors: ['#fff5cb', '#eaeeb1', '#aae387', '#4BC361', '#71a994', '#657271'],
+        colors: ['#C8E2A7', '#A8D581', '#4BC387', '#3BB060', '#2F8E53', '#267341', '#1B5036', '#0D2616'],
         title: {
             text: 'Yearly expenses of land owning families'
         },
