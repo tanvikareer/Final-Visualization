@@ -1,4 +1,9 @@
-        
+     $(function () {
+    Highcharts.chart('container', {
+        chart: {
+            type: 'column'
+        },
+        colors: ['#C8E2A7', '#A8D581', '#4BC387', '#3BB060', '#2F8E53', '#267341', '#1B5036', '#0D2616'],   
         },
         title: {
             text: 'Yearly expenses of landless families'
