@@ -91,23 +91,23 @@ h3, h4, h5, h6 {
 }
 
 a {
-  color:#39c;
+  color:#4BC387;
   text-decoration:none;
 }
 
 a:hover {
-  color:#069;
+  color:#2F8E53;
 }
 
 a small {
   font-size:11px;
-  color:#777;
+  color:#4BC387;
   margin-top:-0.3em;
   display:block;
 }
 
 a:hover small {
-  color:#777;
+  color:#2F8E53;
 }
 
 .wrapper {
