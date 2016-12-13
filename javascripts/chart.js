@@ -154,3 +154,48 @@ $(function () {
         }]
     });
 });
+
+$(function () {
+
+    $(document).ready(function () {
+
+        // Build the chart
+        Highcharts.chart('container4', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Land ownership in the village'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                
+                    name: 'Own farm land',
+                    y: 4.77
+                }, {
+                    name: 'Do not own farm land',
+                    y: 0.91
+
+                }]
+            }]
+        });
+    });
+});
