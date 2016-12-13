@@ -2,19 +2,19 @@ $(function () {
     Highcharts.chart('container', {
         chart: {
             type: 'column'
-            
         },
-        color: ['#fff000', '#7FCB99', '#73DOB37', '#666666'],
+        colors: ['#fff5cb', '#eaeeb1', '#aae387', '#4BC361', '#71a994', '#657271'],
         title: {
-            text: 'Expenses per year by families'
+            text: 'Yearly expenses of land owning families'
         },
         xAxis: {
-            categories: ['Vijaya', 'Tara', 'Sulekha', 'Kanti', 'Varsha']
+            categories: ['Pramila', 'Najibai', 'Lalita', 'Suman', 'Nima', 'Pushpa']
         },
         yAxis: {
             min: 0,
             title: {
-                text: 'Total yearly expenditure (in Rupees)'
+                text: 'Total yearly expenditure in Rupees'
+                
             },
             stackLabels: {
                 enabled: true,
@@ -26,10 +26,10 @@ $(function () {
         },
         legend: {
             align: 'right',
-            x: -30,
+            x: -10,
             verticalAlign: 'top',
             y: 25,
-            floating: true,
+            floating: false,
             backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
             borderColor: '#CCC',
             borderWidth: 1,
@@ -37,29 +37,41 @@ $(function () {
         },
         tooltip: {
             headerFormat: '<b>{point.x}</b><br/>',
-            pointFormat: '{series.name}: {point.y}<br/>Total: {point.stackTotal}'
+            pointFormat: '{series.name}: {point.y}'
         },
         plotOptions: {
             column: {
                 stacking: 'normal',
                 dataLabels: {
-                    enabled: true,
+                    enabled: false,
                     color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white'
                 }
             }
         },
         series: [{
             name: 'Household',
-            data: [33600, 28800, 38400, 33600, 28800]
+            data: [33600, 33600, 28800, 48000, 24000, 24000]
         }, {
             name: 'Education',
-            data: [4800, 0, 4000, 14000, 6000]
+            data: [0, 20000, 15000, 2000, 6000, 8000]
         }, {
             name: 'Loans',
-            data: [12000, 0, 26400, 0, 0]
+            data: [72000, 32400, 26400, 42000, 26400, 26400]
         }, {
             name: 'Health',
-            data: [12000, 18000, 18000, 18000, 19200]
+            data: [18000, 18000, 24000, 24000, 12000, 12000]
+        }, {
+            name: 'Weddings',
+            data: [10000, 20000, 20000, 10000, 8000, 15000]
+        }, {
+            name: 'Festivals',
+            data: [25000, 16000, 15000, 20000, 5500, 20000] 
+        }, {
+            name: 'Utilities',
+            data: [10600, 5100, 8230, 9350, 5100, 10050]
+        }, {
+            name: 'Farms',
+            data: [40000, 50000, 50000, 20000, 20000, 50000]
         }]
     });
 });
